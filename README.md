@@ -5,7 +5,7 @@ chains must publish under the **Price Transparency Law (2014)**, stores full pri
 history, and answers: *which chain and which branch is cheapest, how fast are
 prices rising, and what's next?*
 
-**Live dashboard:** _add your Vercel link_ · **Stack:** Python · PostgreSQL (Neon) · dbt · Next.js · Power BI · GitHub Actions
+**Live dashboard:** [grocery-price-tracker-2lo2.vercel.app](https://grocery-price-tracker-2lo2.vercel.app) · **Stack:** Python · PostgreSQL (Neon) · dbt · Next.js · Power BI · GitHub Actions
 
 ---
 
