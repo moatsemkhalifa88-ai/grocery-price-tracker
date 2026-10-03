@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: core
+    description: Conformed tables written by the Python loader (SCD2 price history).
+    schema: core
+    tables:
+      - name: chains
+      - name: stores
+      - name: products
+      - name: price_history
+        description: One row per store × product × price period (SCD Type 2).
+        loaded_at_field: valid_from
+        freshness:
+          warn_after: {count: 36, period: hour}
+          error_after: {count: 72, period: hour}
+      - name: promotions
+      - name: promotion_items
+  - name: ingest
+    schema: ingest
+    tables:
+      - name: file_log
+      - name: run_log

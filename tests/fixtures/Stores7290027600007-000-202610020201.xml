@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+    <CHAINID>7290027600007</CHAINID>
+    <LASTUPDATEDATE>2026-10-02</LASTUPDATEDATE>
+    <STORES>
+      <STORE>
+        <SUBCHAINID>1</SUBCHAINID>
+        <CHAINNAME>שופרסל</CHAINNAME>
+        <SUBCHAINNAME>שופרסל דיל</SUBCHAINNAME>
+        <STOREID>214</STOREID>
+        <BIKORETNO>4</BIKORETNO>
+        <STORETYPE>1</STORETYPE>
+        <STORENAME>דיל קריון</STORENAME>
+        <ADDRESS>דרך עכו 192</ADDRESS>
+        <CITY>קרית ביאליק</CITY>
+        <ZIPCODE>2700000</ZIPCODE>
+      </STORE>
+      <STORE>
+        <SUBCHAINID>2</SUBCHAINID>
+        <CHAINNAME>שופרסל</CHAINNAME>
+        <SUBCHAINNAME>שופרסל שלי</SUBCHAINNAME>
+        <STOREID>5</STOREID>
+        <BIKORETNO>5</BIKORETNO>
+        <STORETYPE>1</STORETYPE>
+        <STORENAME>שלי תל אביב</STORENAME>
+        <ADDRESS>אבן גבירול 79</ADDRESS>
+        <CITY>תל אביב</CITY>
+        <ZIPCODE>6416201</ZIPCODE>
+      </STORE>
+    </STORES>
+  </asx:values>
+</asx:abap>

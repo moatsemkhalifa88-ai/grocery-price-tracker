@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<OrderXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Envelope>
+		<ChainId>7290172900007</ChainId>
+		<SubChainId>100</SubChainId>
+		<StoreId>83</StoreId>
+		<BikoretNo>100</BikoretNo>
+		<Header>
+			<Details>
+				<Line>
+					<PriceUpdateDate>2024-03-03</PriceUpdateDate>
+					<ItemCode>7290000149844</ItemCode>
+					<ItemName>סינטבון</ItemName>
+					<ManufacturerName>החברה הדרומית</ManufacturerName>
+					<ManufactureCountry>ישראל</ManufactureCountry>
+					<ManufacturerItemDescription>סבון רב שימושי להסרת כתמים קשים מכביסה צבעונית ולבנה</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>7.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2024-02-14</PriceUpdateDate>
+					<ItemCode>7290000178707</ItemCode>
+					<ItemName>תפוצ`יפס 50גרם</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>צ&apos;יפס בטעם טבעי</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>5.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2024-02-14</PriceUpdateDate>
+					<ItemCode>7290010117970</ItemCode>
+					<ItemName>סבבה בוטנים אמריקאים 50 גרם</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>בוטנים אמריקאים</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>2.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2020-05-01</PriceUpdateDate>
+					<ItemCode>7290000288413</ItemCode>
+					<ItemName>סנו די רול און 50</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>כדורית רול און</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>17.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2020-05-01</PriceUpdateDate>
+					<ItemCode>7290000288420</ItemCode>
+					<ItemName>סנו די תרסיס</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>תרסיס דוחה יתושים למספר שעות</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>17.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2017-08-08</PriceUpdateDate>
+					<ItemCode>7290000244143</ItemCode>
+					<ItemName>הוואי אפטר שייב</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>קרם לאחר גילוח</ManufacturerItemDescription>
+					<UnitQty>מ&quot;ל</UnitQty>
+					<Quantity>120.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>19.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2024-07-03</PriceUpdateDate>
+					<ItemCode>7290000244761</ItemCode>
+					<ItemName>ולוטה קרם ידיים 80גר</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>קרם לטיפוח עור הידיים והגוף</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>0.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>13.90</ItemPrice>
+					<UnitOfMeasurePrice>0.13</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2024-06-16</PriceUpdateDate>
+					<ItemCode>7290000146997</ItemCode>
+					<ItemName>טום וג&apos;רי משחת שיניים בטעם מסטיק 50 מל</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>משחת שיניים בטעם מסטיק</ManufacturerItemDescription>
+					<UnitQty>מ&quot;ל</UnitQty>
+					<Quantity>50.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>13.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2020-05-01</PriceUpdateDate>
+					<ItemCode>7290000292557</ItemCode>
+					<ItemName>סנו מט מילוי45לילות</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription></ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>1.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>17.90</ItemPrice>
+					<UnitOfMeasurePrice>0.51</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2024-02-14</PriceUpdateDate>
+					<ItemCode>72917329</ItemCode>
+					<ItemName>אגוזי 45 גרם</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>חטיף אגוזי לוז מצופה שוקולד חלב מעולה</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>5.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2024-02-14</PriceUpdateDate>
+					<ItemCode>72917589</ItemCode>
+					<ItemName>מקופלת חלב 25 גרם</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>חטיף שוקולד חלב</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>5.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2024-05-02</PriceUpdateDate>
+					<ItemCode>7290012938740</ItemCode>
+					<ItemName>סנסודין משחת שיניים מנטה 75 מל</ItemName>
+					<ManufacturerName>גורי</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>Fresh mint - משחת שיניים מנטה מרענן</ManufacturerItemDescription>
+					<UnitQty>מ&quot;ל</UnitQty>
+					<Quantity>75.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>16.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2017-08-08</PriceUpdateDate>
+					<ItemCode>7290000442587</ItemCode>
+					<ItemName>גינקו ק.רב שימוש</ItemName>
+					<ManufacturerName>כ.צ.ט</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>קרם רב שימושי</ManufacturerItemDescription>
+					<UnitQty>מ&quot;ל</UnitQty>
+					<Quantity>250.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>24.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2024-08-28</PriceUpdateDate>
+					<ItemCode>7290000442822</ItemCode>
+					<ItemName>קורגה אולטרה קרם</ItemName>
+					<ManufacturerName>GSK CH</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>אולטרה קרם להצמדת שיניים תותבות</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>29.99</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2023-06-06</PriceUpdateDate>
+					<ItemCode>7290000560533</ItemCode>
+					<ItemName>אדג` ג`ל רגיל 198 גרם</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>ג&apos;ל גילוח לעור רגיל</ManufacturerItemDescription>
+					<UnitQty>מ&quot;ל</UnitQty>
+					<Quantity>225.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>19.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2023-06-06</PriceUpdateDate>
+					<ItemCode>7290000560540</ItemCode>
+					<ItemName>אדג` ג`ל רגיש 198 גרם</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>ג`ל גילוח לעור רגיש</ManufacturerItemDescription>
+					<UnitQty>גרם</UnitQty>
+					<Quantity>198.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>19.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2024-02-08</PriceUpdateDate>
+					<ItemCode>96198032</ItemCode>
+					<ItemName>פישרמנס סוכריות מנטה ירוק</ItemName>
+					<ManufacturerName>שלפארם</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>סוכריות בטעם מנטה</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>0.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>9.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2024-02-14</PriceUpdateDate>
+					<ItemCode>72917367</ItemCode>
+					<ItemName>טעמי 40 גרם</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>חטיף שוקולד חלב</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>5.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2024-02-14</PriceUpdateDate>
+					<ItemCode>72918388</ItemCode>
+					<ItemName>טוויסט 28 גרם</ItemName>
+					<ManufacturerName>שטראוס גרופ</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>חטיף ופל קרמל מצופה שוקולד חלב</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>5.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2016-09-04</PriceUpdateDate>
+					<ItemCode>7290000804484</ItemCode>
+					<ItemName>אלמקס מי פה 400</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>שטיפה דנטלית להגנה מפני עששת</ManufacturerItemDescription>
+					<UnitQty>מ&quot;ל</UnitQty>
+					<Quantity>400.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>29.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2018-08-13</PriceUpdateDate>
+					<ItemCode>7290000803067</ItemCode>
+					<ItemName>אלמקס מש.שינים ילד</ItemName>
+					<ManufacturerName>שסטוביץ</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>משחת שיניים ילדים לגילאי 3-6</ManufacturerItemDescription>
+					<UnitQty>מ&quot;ל</UnitQty>
+					<Quantity>75.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>17.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2020-02-03</PriceUpdateDate>
+					<ItemCode>7290102060979</ItemCode>
+					<ItemName>אלמקס משחת שיניים למניעת עששת 100 מל</ItemName>
+					<ManufacturerName>שסטוביץ</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>משחת שיניים למניעת עששת</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>0.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>17.90</ItemPrice>
+					<UnitOfMeasurePrice>0.17</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2019-12-02</PriceUpdateDate>
+					<ItemCode>70942003117</ItemCode>
+					<ItemName>גאם מברשת שיניים 311</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>מברשת שיניים 311</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>0.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>19.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2019-12-02</PriceUpdateDate>
+					<ItemCode>70942004114</ItemCode>
+					<ItemName>גאם מברשת שיניים 411</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>מברשת שיניים 411</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>0.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>19.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2019-12-02</PriceUpdateDate>
+					<ItemCode>7290006401366</ItemCode>
+					<ItemName>ליגיניה סבון מגן לשטיפה אינטימית</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>סבון נוזלי לשמירת היגיינה נשית אינטימית</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>44.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2024-07-03</PriceUpdateDate>
+					<ItemCode>4004148057076</ItemCode>
+					<ItemName>סלוס האוס פלורידקס</ItemName>
+					<ManufacturerName>גרמזה</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>פלורידקס תערובת תמציות צמחים, שמרים, ברזל, רכזי פירות, דבש וויטמינים</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>119.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2020-06-21</PriceUpdateDate>
+					<ItemCode>5010622005012</ItemCode>
+					<ItemName>אורל בי חוט דנטלי</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>חוט דנטלי ללא שעווה</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>1.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>10.00</ItemPrice>
+					<UnitOfMeasurePrice>0.20</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2020-06-21</PriceUpdateDate>
+					<ItemCode>3014260280772</ItemCode>
+					<ItemName>אורל בי חוט דנטלי מנטה</ItemName>
+					<ManufacturerName>General</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>חוט דנטלי מנטה עם שעווה</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>1.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>10.00</ItemPrice>
+					<UnitOfMeasurePrice>0.20</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2015-09-29</PriceUpdateDate>
+					<ItemCode>7290003935390</ItemCode>
+					<ItemName>אלטמן אכינפורס תמצית 50 מל</ItemName>
+					<ManufacturerName>טעם טבע אלטמן</ManufacturerName>
+					<ManufactureCountry></ManufactureCountry>
+					<ManufacturerItemDescription>אכינפורס 100% תמצית אכינצאה</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>0.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>90.00</ItemPrice>
+					<UnitOfMeasurePrice>1.80</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+				<Line>
+					<PriceUpdateDate>2020-02-04</PriceUpdateDate>
+					<ItemCode>5013965850455</ItemCode>
+					<ItemName>אורל בי מי פה פרו אקספרט 250 מל</ItemName>
+					<ManufacturerName>דיפלומט</ManufacturerName>
+					<ManufactureCountry>גרמניה</ManufactureCountry>
+					<ManufacturerItemDescription>מי פה פרו אקספרט להגנה מקצועית</ManufacturerItemDescription>
+					<UnitQty></UnitQty>
+					<Quantity>0.00</Quantity>
+					<UnitOfMeasure>100.00</UnitOfMeasure>
+					<blsWeighted>0</blsWeighted>
+					<QtyInPackage>1.00</QtyInPackage>
+					<ItemPrice>13.90</ItemPrice>
+					<UnitOfMeasurePrice>0.00</UnitOfMeasurePrice>
+					<AllowDiscount>1</AllowDiscount>
+					<ItemStatus>0</ItemStatus>
+				</Line>
+			</Details>
+		</Header>
+	</Envelope>
+</OrderXml>

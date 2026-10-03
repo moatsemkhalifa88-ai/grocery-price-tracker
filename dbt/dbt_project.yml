@@ -1,0 +1,35 @@
+name: grocery_prices
+version: "1.0.0"
+config-version: 2
+profile: grocery_prices
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+vars:
+  tz: "Asia/Jerusalem"
+  basket_min_chains: 3     # a basket product must be sold by at least this many chains
+  basket_size: 300         # ...and we keep the N with the widest store coverage
+
+models:
+  grocery_prices:
+    staging:
+      +schema: staging
+      +materialized: view
+    intermediate:
+      +schema: staging
+      +materialized: table
+    marts:
+      +schema: marts
+      +materialized: table
+
+seeds:
+  grocery_prices:
+    +schema: staging
+    category_keywords:
+      +column_types:
+        priority: integer

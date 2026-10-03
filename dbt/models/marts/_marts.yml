@@ -1,0 +1,87 @@
+version: 2
+
+models:
+  - name: dim_chain
+    description: One row per supermarket chain.
+    columns:
+      - name: chain_id
+        tests: [unique, not_null]
+  - name: dim_store
+    description: One row per branch, with chain names. `is_tracked` = branch is in the pipeline.
+    columns:
+      - name: store_key
+        tests: [unique, not_null]
+      - name: chain_id
+        tests:
+          - relationships:
+              arguments: {to: ref('dim_chain'), field: chain_id}
+  - name: dim_product
+    description: Products with an inferred category (keyword rules in seeds/category_keywords.csv).
+    columns:
+      - name: product_key
+        tests: [unique, not_null]
+      - name: category_en
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['Dairy & Eggs', 'Bakery', 'Snacks & Sweets', 'Coffee & Tea', 'Beverages',
+                         'Pantry', 'Deli & Salads', 'Meat & Fish', 'Cleaning', 'Paper & Baby',
+                         'Personal Care', 'Fruit & Veg', 'Other']
+  - name: dim_date
+    columns:
+      - name: date_day
+        tests: [unique, not_null]
+  - name: fct_current_price
+    description: >
+      Grain: tracked store × product, today. `effective_price` = the lower of the
+      shelf price and the best active non-club promotion (per unit).
+    tests:
+      - unique_combination:
+          arguments: {columns: ['store_key', 'product_key']}
+    columns:
+      - name: store_key
+        tests:
+          - relationships:
+              arguments: {to: ref('dim_store'), field: store_key}
+      - name: product_key
+        tests:
+          - relationships:
+              arguments: {to: ref('dim_product'), field: product_key}
+      - name: effective_price
+        tests: [not_null]
+  - name: fct_price_changes
+    description: Grain — one shelf-price change in one store (first listings excluded).
+    columns:
+      - name: pct_change
+        tests: [not_null]
+      - name: direction
+        tests:
+          - accepted_values:
+              arguments: {values: ['increase', 'decrease']}
+  - name: mart_product_chain_price
+    description: Grain — barcode product × chain. Cheapest chain per product.
+    tests:
+      - unique_combination:
+          arguments: {columns: ['product_key', 'chain_id']}
+  - name: mart_basket_index_daily
+    description: >
+      Grain — chain × day. Jevons price index (base 100 = each product's first
+      observed price) and the cost of the basket every chain sold that day.
+    tests:
+      - unique_combination:
+          arguments: {columns: ['chain_id', 'day']}
+    columns:
+      - name: price_index
+        tests: [not_null]
+  - name: mart_store_basket
+    columns:
+      - name: store_key
+        tests: [unique, not_null]
+  - name: mart_chain_summary
+    columns:
+      - name: chain_id
+        tests: [unique, not_null]
+  - name: mart_daily_changes
+    tests:
+      - unique_combination:
+          arguments: {columns: ['chain_id', 'change_date']}

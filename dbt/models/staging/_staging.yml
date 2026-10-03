@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: stg_stores
+    columns:
+      - name: store_key
+        tests: [unique, not_null]
+  - name: stg_products
+    columns:
+      - name: product_key
+        tests: [unique, not_null]
+  - name: stg_price_history
+    description: SCD2 price periods. At most one open (current) period per store × product.
+    columns:
+      - name: item_price
+        tests: [not_null]
+      - name: store_key
+        tests:
+          - relationships:
+              arguments: {to: ref('stg_stores'), field: store_key}
+      - name: product_key
+        tests:
+          - relationships:
+              arguments: {to: ref('stg_products'), field: product_key}
+  - name: stg_promotions
+    columns:
+      - name: promotion_id
+        tests: [not_null]

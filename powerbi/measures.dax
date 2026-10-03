@@ -1,0 +1,64 @@
+// ===================================================================
+// Grocery Price Tracker — DAX measures
+// Paste each measure into a "_Measures" table in Power BI Desktop
+// (Modeling → New table: _Measures = {BLANK()} , then New measure).
+// ===================================================================
+
+// ---------- current prices (fct_current_price) ----------
+Products Tracked = DISTINCTCOUNT ( fct_current_price[product_key] )
+
+Avg Effective Price = AVERAGE ( fct_current_price[effective_price] )
+
+Items On Promo = CALCULATE ( COUNTROWS ( fct_current_price ), fct_current_price[is_on_promo] = TRUE () )
+
+Promo Share % = DIVIDE ( [Items On Promo], COUNTROWS ( fct_current_price ) )
+
+Avg Promo Discount % = AVERAGE ( fct_current_price[promo_discount_pct] ) / 100
+
+// Cheapest price for the product(s) in context, across every chain
+Best Price (All Chains) =
+CALCULATE ( MIN ( fct_current_price[effective_price] ), REMOVEFILTERS ( dim_chain ), REMOVEFILTERS ( dim_store ) )
+
+// How much more this chain charges than the cheapest chain, for the same product
+Premium vs Best % =
+VAR here = MIN ( fct_current_price[effective_price] )
+RETURN DIVIDE ( here - [Best Price (All Chains)], [Best Price (All Chains)] )
+
+// ---------- basket & index (mart_basket_index_daily) ----------
+Basket Cost =
+VAR lastDay = MAX ( mart_basket_index_daily[day] )
+RETURN CALCULATE ( SUM ( mart_basket_index_daily[basket_cost] ), mart_basket_index_daily[day] = lastDay )
+
+Price Index = AVERAGE ( mart_basket_index_daily[price_index] )
+
+Index Change vs 30d Ago =
+VAR lastDay = MAX ( mart_basket_index_daily[day] )
+VAR nowIdx  = CALCULATE ( [Price Index], mart_basket_index_daily[day] = lastDay )
+VAR thenIdx = CALCULATE ( [Price Index], mart_basket_index_daily[day] = lastDay - 30 )
+RETURN DIVIDE ( nowIdx - thenIdx, thenIdx )
+
+Basket Gap Cheapest vs Priciest % =
+VAR t = ADDCOLUMNS ( VALUES ( dim_chain[chain_name_he] ), "cost", [Basket Cost] )
+VAR lo = MINX ( FILTER ( t, NOT ISBLANK ( [cost] ) ), [cost] )
+VAR hi = MAXX ( t, [cost] )
+RETURN DIVIDE ( hi - lo, lo )
+
+Chain Basket Rank =
+RANKX ( ALL ( dim_chain[chain_name_he] ), [Basket Cost], , ASC, DENSE )
+
+// ---------- price changes (fct_price_changes) ----------
+Price Changes = COUNTROWS ( fct_price_changes )
+
+Price Increases = CALCULATE ( [Price Changes], fct_price_changes[direction] = "increase" )
+
+Price Decreases = CALCULATE ( [Price Changes], fct_price_changes[direction] = "decrease" )
+
+Increase Ratio = DIVIDE ( [Price Increases], [Price Changes] )
+
+Avg Increase % = CALCULATE ( AVERAGE ( fct_price_changes[pct_change] ), fct_price_changes[direction] = "increase" ) / 100
+
+Price Changes (Last 30d) =
+CALCULATE ( [Price Changes], DATESINPERIOD ( dim_date[date_day], MAX ( dim_date[date_day] ), -30, DAY ) )
+
+Price Increases Rolling 7d =
+CALCULATE ( [Price Increases], DATESINPERIOD ( dim_date[date_day], MAX ( dim_date[date_day] ), -7, DAY ) )

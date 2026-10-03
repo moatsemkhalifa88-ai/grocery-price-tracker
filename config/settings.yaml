@@ -1,0 +1,43 @@
+# Grocery Price Tracker — pipeline settings
+# Secrets (DATABASE_URL) live in .env, never here.
+
+chains:            # set enabled: false to skip a chain
+  shufersal:  { enabled: true }
+  rami_levy:  { enabled: true }
+  osher_ad:   { enabled: true }
+  yohananof:  { enabled: true }
+  tiv_taam:   { enabled: true }
+
+# Which branches to track. The free Neon plan holds 0.5 GB, so we track a
+# region rather than all ~1,500 branches in the country.
+store_selection:
+  # matched as a substring against city, store name and address
+  # (some chains put a numeric city code in <City>, so name/address matter)
+  cities:
+    - חיפה
+    - קרית
+    - קריית
+    - כרמיאל
+    - עכו
+    - נהריה
+    - נצרת
+    - נוף הגליל
+    - עפולה
+    - שפרעם
+    - טמרה
+    - יקנעם
+    - טבריה
+  max_stores_per_chain: 6     # ~6 branches x 5 chains fits comfortably in 0.5 GB
+  # always track these, whatever the filters say  (chain_key: [store_id, ...])
+  include_store_ids: {}
+
+file_types: [PriceFull, PromoFull]   # Stores is always fetched first
+
+raw:
+  keep_files: true          # bronze layer: keep the original downloads
+  dir: data/raw
+  retention_days: 14        # older raw files are deleted by `pricetracker cleanup`
+
+http:
+  timeout_seconds: 60
+  retries: 3

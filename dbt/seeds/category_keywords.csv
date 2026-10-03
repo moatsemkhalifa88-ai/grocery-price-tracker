@@ -1,0 +1,60 @@
+keyword,category_en,category_he,priority
+חלב,Dairy & Eggs,מוצרי חלב וביצים,10
+גבינ,Dairy & Eggs,מוצרי חלב וביצים,10
+יוגורט,Dairy & Eggs,מוצרי חלב וביצים,10
+קוטג,Dairy & Eggs,מוצרי חלב וביצים,10
+שמנת,Dairy & Eggs,מוצרי חלב וביצים,10
+חמאה,Dairy & Eggs,מוצרי חלב וביצים,10
+מעדן,Dairy & Eggs,מוצרי חלב וביצים,12
+ביצים,Dairy & Eggs,מוצרי חלב וביצים,10
+לחם,Bakery,לחם ומאפים,10
+פית,Bakery,לחם ומאפים,12
+לחמני,Bakery,לחם ומאפים,10
+חלה,Bakery,לחם ומאפים,12
+עוגיות,Snacks & Sweets,חטיפים ומתוקים,5
+שוקולד,Snacks & Sweets,חטיפים ומתוקים,5
+חטיף,Snacks & Sweets,חטיפים ומתוקים,5
+במבה,Snacks & Sweets,חטיפים ומתוקים,5
+ביסלי,Snacks & Sweets,חטיפים ומתוקים,5
+וופל,Snacks & Sweets,חטיפים ומתוקים,5
+קפה,Coffee & Tea,קפה ותה,8
+תה ,Coffee & Tea,קפה ותה,16
+קולה,Beverages,משקאות,15
+מים,Beverages,משקאות,18
+מיץ,Beverages,משקאות,15
+משקה,Beverages,משקאות,16
+בירה,Beverages,משקאות,15
+יין,Beverages,משקאות,16
+שמן,Pantry,מזווה,30
+אורז,Pantry,מזווה,30
+פסטה,Pantry,מזווה,30
+ספגטי,Pantry,מזווה,30
+קמח,Pantry,מזווה,30
+סוכר,Pantry,מזווה,30
+טחינה,Pantry,מזווה,30
+רסק,Pantry,מזווה,30
+טונה,Pantry,מזווה,30
+שימורים,Pantry,מזווה,32
+קורנפלקס,Pantry,מזווה,30
+דגני,Pantry,מזווה,31
+חומוס,Deli & Salads,סלטים ומעדניה,25
+סלט,Deli & Salads,סלטים ומעדניה,26
+עוף,Meat & Fish,בשר ודגים,20
+שניצל,Meat & Fish,בשר ודגים,20
+בקר,Meat & Fish,בשר ודגים,20
+נקניק,Meat & Fish,בשר ודגים,20
+דג,Meat & Fish,בשר ודגים,24
+כביסה,Cleaning,ניקיון,15
+כלים,Cleaning,ניקיון,15
+אקונומיקה,Cleaning,ניקיון,15
+ניקוי,Cleaning,ניקיון,15
+נייר טואלט,Paper & Baby,נייר ותינוקות,15
+מגבונים,Paper & Baby,נייר ותינוקות,15
+חיתול,Paper & Baby,נייר ותינוקות,15
+שמפו,Personal Care,טיפוח,15
+סבון,Personal Care,טיפוח,16
+משחת שיניים,Personal Care,טיפוח,15
+דאודורנט,Personal Care,טיפוח,15
+במשקל,Fruit & Veg,פירות וירקות,40
+ירק,Fruit & Veg,פירות וירקות,40
+פרי,Fruit & Veg,פירות וירקות,40
