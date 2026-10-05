@@ -1,0 +1,50 @@
+{
+  "name": "Mehiron Night",
+  "dataColors": ["#60a5fa", "#fb923c", "#34d399", "#facc15", "#f472b6", "#a78bfa", "#67e8f9", "#a3a3a3"],
+  "background": "#12152a",
+  "foreground": "#eef0fb",
+  "tableAccent": "#a78bfa",
+  "good": "#4ade80",
+  "bad": "#fb7185",
+  "neutral": "#a6abc7",
+  "maximum": "#f472b6",
+  "center": "#a78bfa",
+  "minimum": "#67e8f9",
+  "textClasses": {
+    "title":   { "fontFace": "Segoe UI Semibold", "fontSize": 14, "color": "#eef0fb" },
+    "header":  { "fontFace": "Segoe UI Semibold", "fontSize": 12, "color": "#eef0fb" },
+    "label":   { "fontFace": "Segoe UI", "fontSize": 10, "color": "#a6abc7" },
+    "callout": { "fontFace": "Segoe UI Bold", "fontSize": 28, "color": "#eef0fb" }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#12152a" } }, "transparency": 0 }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#2a2e4a" } }, "radius": 14 }],
+        "title": [{ "fontColor": { "solid": { "color": "#eef0fb" } } }],
+        "visualHeader": [{ "background": { "solid": { "color": "#12152a" } }, "foreground": { "solid": { "color": "#a6abc7" } } }],
+        "dropShadow": [{ "show": false }]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#070a17" } }, "transparency": 0 }],
+        "outspace": [{ "color": { "solid": { "color": "#070a17" } } }]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "grid": [{ "gridHorizontalColor": { "solid": { "color": "#2a2e4a" } }, "gridVerticalColor": { "solid": { "color": "#2a2e4a" } } }],
+        "columnHeaders": [{ "fontColor": { "solid": { "color": "#a6abc7" } }, "backColor": { "solid": { "color": "#12152a" } } }],
+        "values": [{ "fontColorPrimary": { "solid": { "color": "#eef0fb" } }, "backColorPrimary": { "solid": { "color": "#12152a" } },
+                     "fontColorSecondary": { "solid": { "color": "#eef0fb" } }, "backColorSecondary": { "solid": { "color": "#161a33" } } }]
+      }
+    },
+    "slicer": {
+      "*": {
+        "items": [{ "fontColor": { "solid": { "color": "#eef0fb" } }, "background": { "solid": { "color": "#12152a" } } }],
+        "header": [{ "fontColor": { "solid": { "color": "#a6abc7" } } }]
+      }
+    }
+  }
+}

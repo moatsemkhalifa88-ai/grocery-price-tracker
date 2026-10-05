@@ -4,7 +4,7 @@ $root = Split-Path -Parent $PSScriptRoot
 $script = Join-Path $root "scripts\run_daily.ps1"
 
 $action  = New-ScheduledTaskAction -Execute "powershell.exe" `
-           -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$script`"" -WorkingDirectory $root
+           -Argument "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$script`"" -WorkingDirectory $root
 $trigger = New-ScheduledTaskTrigger -Daily -At 9:00am
 # StartWhenAvailable: if the PC was off at 09:00, run as soon as it is back on
 $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -RunOnlyIfNetworkAvailable `

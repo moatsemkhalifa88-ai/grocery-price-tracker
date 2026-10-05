@@ -22,6 +22,8 @@ The dbt marts form a **star schema** that Power BI imports directly.
 3. Data connectivity mode: **Import** (the marts are small and refresh daily).
 4. Credentials: **Database** → user `web_reader` and its password
    (read-only role from `sql/migrations/003_web_access.sql`).
+   If you get *"Endpoint ID is not specified"*, the driver doesn't send SNI: enter the password as
+   `endpoint=<endpoint-id>;<password>` where `<endpoint-id>` is the first part of the host (`ep-cool-name-123456`).
 5. Select these tables from the `marts` schema:
 
 | Table | Grain | Role |
@@ -69,9 +71,10 @@ Create a `_Measures` table and paste everything from [`measures.dax`](measures.d
    matrix: category × chain with Avg Increase %.
 4. **Branches** — table from `mart_store_basket`, slicer on city, conditional formatting on basket cost.
 
-Keep chain colours consistent with the web dashboard:
-Shufersal `#2a78d6`, Rami Levy `#eb6834`, Osher Ad `#1baf7a`, Yohananof `#eda100`, Tiv Taam `#e87ba4`
-(**Format → Data colors**, per chain).
+Match the web dashboard: **View → Themes → Browse for themes →** [`theme.json`](theme.json)
+(dark navy background, chain colours in the same order as the site).
+Then fix each chain's colour so it never depends on sort order (**Format → Data colors**):
+Shufersal `#60a5fa`, Rami Levy `#fb923c`, Osher Ad `#34d399`, Yohananof `#facc15`, Tiv Taam `#f472b6`.
 
 ## 5. Refresh
 

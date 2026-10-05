@@ -3,7 +3,7 @@ import CountUp from "@/components/CountUp";
 import LineChart, { type Series } from "@/components/LineChart";
 import { chainColor } from "@/lib/chains";
 import { int, longDate, money } from "@/lib/format";
-import { basketSize, chainSummary, forecasts, indexSeries, recentChanges, totals } from "@/lib/queries";
+import { basketSize, chainSummary, forecasts, homeIncreases, indexSeries, totals } from "@/lib/queries";
 
 export const dynamic = "force-dynamic";
 
@@ -15,7 +15,7 @@ export default async function Overview() {
     indexSeries(),
     forecasts(),
     totals(),
-    recentChanges("increase", 6),
+    homeIncreases(6),
     basketSize(),
   ]);
 

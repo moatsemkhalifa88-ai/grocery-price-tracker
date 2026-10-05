@@ -86,6 +86,30 @@ export const recentChanges = (direction: "increase" | "decrease" | null, limit =
     [direction, limit]
   );
 
+// Home page: one row per product+chain, everyday products first, and no
+// extreme jumps (>100% is usually a clearance price ending, not a price rise;
+// those are listed on /changes as anomalies instead).
+export const homeIncreases = (limit = 6) =>
+  query<Change>(
+    `select * from (
+       select distinct on (f.product_key, f.chain_id)
+              f.product_key, p.product_name, c.chain_key, c.chain_name_he, s.store_name,
+              f.change_date::text as change_date, f.previous_price, f.new_price, f.pct_change,
+              p.is_basket_product
+       from marts.fct_price_changes f
+       join marts.dim_product p using (product_key)
+       join marts.dim_store s using (store_key)
+       join marts.dim_chain c on c.chain_id = f.chain_id
+       where f.direction = 'increase'
+         and f.change_date > current_date - 7
+         and f.pct_change <= 100
+       order by f.product_key, f.chain_id, f.change_date desc
+     ) x
+     order by is_basket_product desc, pct_change desc
+     limit $1`,
+    [limit]
+  );
+
 export type DailyChanges = { change_date: string; n_increases: number; n_decreases: number };
 export const dailyChanges = () =>
   query<DailyChanges>(
