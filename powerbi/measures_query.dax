@@ -1,0 +1,21 @@
+// Paste into Power BI: DAX query view -> new query -> Run -> "Update model with changes"
+DEFINE
+    MEASURE _Measures[Products Tracked] = DISTINCTCOUNT ( fct_current_price[product_key] )
+    MEASURE _Measures[Avg Effective Price] = AVERAGE ( fct_current_price[effective_price] )
+    MEASURE _Measures[Items On Promo] = CALCULATE ( COUNTROWS ( fct_current_price ), fct_current_price[is_on_promo] = TRUE () )
+    MEASURE _Measures[Promo Share %] = DIVIDE ( [Items On Promo], COUNTROWS ( fct_current_price ) )
+    MEASURE _Measures[Avg Promo Discount %] = AVERAGE ( fct_current_price[promo_discount_pct] ) / 100
+    MEASURE _Measures[Best Price (All Chains)] = CALCULATE ( MIN ( fct_current_price[effective_price] ), REMOVEFILTERS ( dim_chain ), REMOVEFILTERS ( dim_store ) )
+    MEASURE _Measures[Premium vs Best %] = VAR here = MIN ( fct_current_price[effective_price] ) RETURN DIVIDE ( here - [Best Price (All Chains)], [Best Price (All Chains)] )
+    MEASURE _Measures[Basket Cost] = VAR lastDay = CALCULATE ( MAX ( mart_basket_index_daily[day] ), REMOVEFILTERS ( dim_date ) ) RETURN CALCULATE ( SUM ( mart_basket_index_daily[basket_cost] ), mart_basket_index_daily[day] = lastDay, REMOVEFILTERS ( dim_date ) )
+    MEASURE _Measures[Price Index] = AVERAGE ( mart_basket_index_daily[price_index] )
+    MEASURE _Measures[Basket Gap %] = VAR t = ADDCOLUMNS ( ALL ( dim_chain[chain_name_he] ), "cost", [Basket Cost] ) VAR lo = MINX ( FILTER ( t, NOT ISBLANK ( [cost] ) ), [cost] ) VAR hi = MAXX ( t, [cost] ) RETURN DIVIDE ( hi - lo, lo )
+    MEASURE _Measures[Cheapest Chain] = VAR t = ADDCOLUMNS ( ALL ( dim_chain[chain_name_he] ), "cost", [Basket Cost] ) RETURN MINX ( TOPN ( 1, FILTER ( t, NOT ISBLANK ( [cost] ) ), [cost], ASC ), dim_chain[chain_name_he] )
+    MEASURE _Measures[Chain Basket Rank] = RANKX ( ALL ( dim_chain[chain_name_he] ), [Basket Cost], , ASC, DENSE )
+    MEASURE _Measures[Price Changes] = COUNTROWS ( fct_price_changes )
+    MEASURE _Measures[Price Increases] = CALCULATE ( [Price Changes], fct_price_changes[direction] = "increase" )
+    MEASURE _Measures[Price Decreases] = CALCULATE ( [Price Changes], fct_price_changes[direction] = "decrease" )
+    MEASURE _Measures[Increase Ratio] = DIVIDE ( [Price Increases], [Price Changes] )
+    MEASURE _Measures[Avg Increase %] = CALCULATE ( AVERAGE ( fct_price_changes[pct_change] ), fct_price_changes[direction] = "increase" ) / 100
+EVALUATE
+    SUMMARIZECOLUMNS ( dim_chain[chain_name_he], "Basket Cost", [Basket Cost], "Rank", [Chain Basket Rank], "Promo Items", [Items On Promo], "Price Changes", [Price Changes] )

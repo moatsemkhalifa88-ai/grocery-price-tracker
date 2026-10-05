@@ -7,6 +7,12 @@ prices rising, and what's next?*
 
 **Live dashboard:** [grocery-price-tracker-2lo2.vercel.app](https://grocery-price-tracker-2lo2.vercel.app) · **Stack:** Python · PostgreSQL (Neon) · dbt · Next.js · Power BI · GitHub Actions
 
+### Power BI report
+
+The same star schema feeds a Power BI report (dark theme matching the site; DAX measures in [`powerbi/measures_query.dax`](powerbi/measures_query.dax), full page as [PDF](powerbi/report.pdf)).
+
+![Power BI overview: cheapest chain, basket gap, price changes, basket cost by chain, price index and chain summary](docs/powerbi-overview.png)
+
 ---
 
 ## Architecture
